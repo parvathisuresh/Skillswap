@@ -39,91 +39,71 @@
             transform: translateY(-2px);
             transition: all 0.2s ease-in-out;
         }
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>SkillShare Dashboard</title>
-            <link rel="stylesheet" href="css/styles.css">
-            <style>
-                /* Minimal inline styles to ensure sensible default appearance */
-                :root{font-family:Segoe UI, Roboto, Arial, sans-serif;color:#222}
-                .container{display:flex;min-height:100vh}
-                .sidebar{width:220px;background:#0f1724;color:#fff;padding:20px}
-                .sidebar h2{margin:0 0 12px}
-                .sidebar ul{list-style:none;padding:0;margin:0 0 16px}
-                .sidebar li{padding:8px 0;opacity:.9}
-                .sidebar li.active{font-weight:700}
-                .post-btn{background:#06b6d4;border:none;padding:10px 12px;color:#05272b;border-radius:6px;cursor:pointer}
-                .main-content{flex:1;padding:28px;background:#f3f4f6}
-                h1{margin:0 0 18px}
-                .mentors,.requests{background:#fff;padding:16px;border-radius:8px;margin-bottom:16px}
-                .mentor-card,.request-card{border:1px solid #e6e9ee;padding:12px;border-radius:6px;margin-bottom:10px;background:#fafafa}
-                .swap-btn,.accept-btn,.decline-btn{margin-top:8px;padding:8px 10px;border-radius:6px;border:none;cursor:pointer}
-                .swap-btn{background:#7c3aed;color:#fff}
-                .accept-btn{background:#10b981;color:#fff;margin-right:8px}
-                .decline-btn{background:#ef4444;color:#fff}
-            </style>
-        </head>
-        <body>
-
-            <div class="container">
-
-                <aside class="sidebar">
-                    <h2>SkillShare</h2>
-                    <ul>
-                        <li class="active">Dashboard</li>
-                        <li>Explore</li>
-                        <li>Messages</li>
-                        <li>Profile</li>
-                        <li>Settings</li>
-                    </ul>
-                    <button class="post-btn">+ Post a Skill</button>
-                </aside>
-
-                <main class="main-content">
-                    <h1>Welcome back, Alex 👋</h1>
-
-                    <section class="mentors">
-                        <h2>Top Skilled Mentors</h2>
-
-                        <div class="mentor-card">
-                            <h3>Sarah Jenkins</h3>
-                            <p>UI/UX Designer</p>
-                            <button class="swap-btn">Request Swap</button>
-                        </div>
-
-                        <div class="mentor-card">
-                            <h3>Marcus Lee</h3>
-                            <p>Full Stack Dev</p>
-                            <button class="swap-btn">Request Swap</button>
-                        </div>
-                    </section>
-
-                    <section class="requests">
-                        <h2>Requests</h2>
-
-                        <div class="request-card">
-                            <p><strong>Li Wei</strong> wants to swap Spanish for React</p>
-                            <button class="accept-btn">Accept</button>
-                            <button class="decline-btn">Decline</button>
-                        </div>
-
-                        <div class="request-card">
-                            <p><strong>Jordan Smith</strong> wants to swap Cooking for Python</p>
-                            <button class="accept-btn">Accept</button>
-                            <button class="decline-btn">Decline</button>
-                        </div>
-                    </section>
-
-                </main>
-
-            </div>
-
-            <script src="js/script.js"></script>
-        </body>
-        </html>
+        .interest-card.active {
+            border-color: #9d9de0;
+            background-color: #e5e5fa;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between border-b border-primary/20 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-4 md:px-20 lg:px-40 sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary text-slate-900">
+<span class="material-symbols-outlined text-2xl">swap_calls</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">SkillSwap</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-2">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Onboarding</span>
+<div class="h-1 w-24 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+</div>
+<div class="size-10 rounded-full border-2 border-primary bg-cover bg-center" data-alt="User profile placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgBFLurHmT_0HWaAqq3BX4xerA_AKzkVGvKSPXi9JbuxjbxN4ZmejuUG8BQ_ZqKg-hHx9XZ_nXNbwMsmtdi_r4iKWT5uL0-1VK4eFvI1MP5s3CjSgLDzk8j2vfU-5kWCjVyDzyBNUG8YOqo5V4lV0Eu_9b8_6OJSxd1TSpAekIrDXBfrl5YvD6yZ7ftjbWzjt8ZsTEKcd990gATzySC5MS4PrP0QoQbjBaGQISddYm_aE0MsZIEgtzpuFu-WlKqP-qyK9FYWkYeeA")'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-6 md:px-20 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Progress Label -->
+<div class="mb-6">
+<div class="flex items-center gap-2 text-primary font-semibold text-sm">
+<span class="material-symbols-outlined text-sm">account_circle</span>
+<span>Step 1 of 3: Setting up your profile</span>
+</div>
+</div>
+<!-- Hero Title -->
+<div class="mb-10 text-center md:text-left">
+<h1 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight tracking-tight mb-4">
+                        What design skills do you <br class="hidden md:block"/> want to learn?
+                    </h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                        Select your interests to get personalized skill swap matches. We'll find people who want to learn what you know and can teach you what you don't.
+                    </p>
+</div>
+<!-- Grid Selection -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+<!-- UI/UX Design -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">dashboard_customize</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">UI/UX Design</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+</div>
+</div>
+<!-- Graphic Design -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">palette</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Graphic Design</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
 </div>
 </div>
 <!-- Motion Graphics -->
