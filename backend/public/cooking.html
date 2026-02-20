@@ -1,3 +1,185 @@
-<title>Cooking Skills</title>
-<h1>Cooking Skills</h1>
-<h2>Top Cooking Mentors</h2>
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Swap - Select Interests</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e5e5fa",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121220",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 py-4 lg:px-40 bg-white dark:bg-slate-900">
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center rounded-lg bg-primary text-slate-900">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Skill Swap</h2>
+</div>
+<div class="flex gap-3">
+<button class="flex size-10 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="flex flex-1 justify-center py-10 px-6 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Welcome Section -->
+<div class="flex flex-col gap-4 mb-8">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-tight">
+                            Tell us what you'd like to cook
+                        </h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-normal max-w-2xl">
+                            Select your specialties or topics you'd like to share with others. This helps us match you with the right community.
+                        </p>
+</div>
+<!-- Search Bar Section -->
+<div class="mb-10">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden">
+<div class="text-slate-500 dark:text-slate-400 flex bg-white dark:bg-slate-800 items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-slate-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-white dark:bg-slate-800 placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 text-base font-normal" placeholder="Search for more tags (e.g. Sourdough, Thai, Keto)" value=""/>
+</div>
+</label>
+</div>
+<!-- Interest Selection Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Selected Card Example -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden ring-4 ring-primary bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Gourmet pasta dish with fresh herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOA1QLLv8UJVI9gxlj6m39ZUBC_hCyBWWuipVwN7tTGKth7QnEWXnGlB7pfM0r6myXE04sZrUO41FBPFe1Ww5eyrkKIypHSjDAJqquxlbsW7qtYev6WO19Up-uCg4Jv6BsEE4MVzOY43Ez30Ted7Dtq4sn5BhUO4jnR8IYvooqD_cA12KRa9tASY9bNQZ2PIrZqF-yUAIGa4OnpzaPrapN9A8y6ckzhyIILa6b7ocAqzPhtn2kMfHPthCa3507rNV6SMDCoLWrw1o"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<div class="bg-white rounded-full p-2 shadow-lg">
+<span class="material-symbols-outlined text-slate-900 font-bold">check</span>
+</div>
+</div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal">Italian Cuisine</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium">Selected</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Freshly baked loaves of sourdough bread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_P5gVC4emXnGSrRI96trEI3fvfBSH2ltEEgLh6AKbtyr2_Nz0xP0tRUHfYmK19Pia04hXHQYeBF7mIFo4USRN-_QgdJqyAnuJ4-bdgqD6cGUyNeeux75KfyLGHCzq6rFwPhSIfeKQxuuq0_UqO8Kf7dCntnuwfIfFQYRUCijcZA2iFEpVc5xb_3e7RBHYU1xqbUAjtRhndSmXAclVIuwEZdxELaXbiuQx1bUoI1dkz1h8HRTNGBsNYMX4kUMMCYbvKEPR9vle0fM"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Baking</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Colorful bowl of fresh vegan salad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrLAyGVBngBkkMp2u87Y2oyL-0ldRk9uP6156KlmncW60Y5cuKeSVz5SVbW5NceQ1yOSMZ2xMPE4kuTYPXeI-ZHBYuEMh-ou1G6Zep4BVvSCh-fJfv-jaMKdE8wfMu7NjhPzbfiaLvXYg_-rKYeLPpWJMdtzwf3ILJPTXUUj_GZOdsPZmpTGpGdHHeb4ZYV3mE-Pb-1zcNLjPXmwtfL0CbgAGnoiQ9rPalGyGaYgKxRvJfCZrQStbOayykEHXre1wm3xQBl-tTzFE"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Vegan</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Assortment of delicate French pastries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6h0IW0sp0LaeicagO3aD9vRxOz4RTlIygVXem-JvO5QcTajcJSTMNQ11WYd4HzBaJqHnfXfSVasCMAiCuofg-99oY4bTA5S_qxSIZVqycXF1_F4Q-Hmhd_a-qAhqa9PYeMbo8-98Rwy4kOSZIfXgq9beXfKfoyEBPKLl3sdIb5pfTLrOypvOFuJY0R18xO-mudxWUbnnEf7HOWUexD2yWWN5uUmf0GI-QwwySH_1AfhlPYCwieOtAvGMkq6dOjuXwSAnMCs1NFjc"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Pastry</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Skewers of meat and vegetables on a grill" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Ta4F0AfxYJ63ORDKcS59S-mS2uvSlyk5uIOYJEaseYbKXpKBVRZ7gIiwUz11k1AkqfHyH0Fk3nTKWKRw3M4h_XJCRA9j-3b0WatFMV9zw9V2tKeLpOH_Uu9Oy4qkRMPauZcTbsvAxUf4EDXr7gh5H7ttWsttBQdxxWLC2VltaRny9YINqteKB691JOEkCpKtCnBnbzBRUGW8dwQ2Bz_jh_VvD-pTSkiuhHqZdAR1hz-c26SJUwlf-JGIx-KH56GPtFpdpLnyVrI"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Grilling</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Healthy buddha bowl with avocado and quinoa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnpiFSn0bFwKRO5U58y0qCV0bSS8rdjYd3rg5MOMr6KAurTnjc7Ho3_zJ79sFUPSNgEBXKVVWvl39s7G5PJIBYWfMYbRpVVKeLwhwdWXieTKivOb8DXsRa39P29m287_-R0nQBYQuGTtEAucoWdFHaezvDkT4Cl_MRmdjZ57_nNtAmQqhUxmIgtwR6DblgZ95X9iHr1RTyxlI7AcCgIoJFmrPr77cU4qDcrRZ7NPx9TYpBB1lhcMuDNuth22ndOs4C6VC5riuVntI"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Healthy Meals</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Organized containers of prepped healthy food" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8UwS57m5EcAR4dGwy8L3oR73qPev_iTzI-GNZK12u2XtvgpBJkAvRWQz43cBeLSrtzSwlkEz8-P-FfS4S4_2muLb2FcJ6jtynw0WjrnBjK9sbGFLWgW7MbTN7vgFpUw6r0d2k6Z7tVqsFWmNtf9w0c1_m9ATBW11dfg2qitdubkyBePMpl39xrf0O6hfkGgru2QGduyCMwBi9kgv_fHAUF0R9TFSoopAeJbVuFt8rwYf55-7b9g_V5KlJrVoVygqtIZ__tRe1us"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Meal Prep</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Glass jars of fermented vegetables and kombucha" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXlbErUrvT9X-yTtEH_2N9rLYjjTHg1XMaG1CQdmhdyoIksBhW2v_VBPUtMM23xrqK90xAPpZYiRGEtdVRd4bXBHbItwQf5MiLzLxuvUrDCjcRKTpNw8omGkfP3NSpKcP-TiBlLsz86kjTIHYBZWaS7hgWGK9zWXaZUBc6cgiXmj72QoJMyd436GC8UoutWFuYU5ozx29JEXql_9jw8g7_bMhPUWEDJCWetJX9xt2SYAxqMfeZb_dQWaXm2GZ7kp-uP-k-83tl5Zo"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">Fermentation</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal">Tap to select</p>
+</div>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="flex py-12 mt-4">
+<button class="flex min-w-[180px] w-full max-w-[400px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-primary text-slate-900 text-lg font-bold leading-normal tracking-wide shadow-md hover:brightness-95 transition-all">
+<span class="truncate">Continue</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

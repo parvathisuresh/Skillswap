@@ -1,3 +1,164 @@
-<title>Language Skills</title>
-<h1>Language Skills</h1>
-<h2>Top Language Mentors</h2>
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Swap - Language Selection</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e5e5fa",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121220",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .selected-card {
+            border: 3px solid #6366f1; /* Deep lavender accent */
+        }
+        .selected-check {
+            display: flex !important;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen font-display">
+<div class="relative flex min-h-screen flex-col">
+<!-- Header / Navigation -->
+<header class="flex items-center justify-between border-b border-primary/30 px-6 py-4 md:px-20 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 bg-primary rounded-lg text-slate-800">
+<span class="material-symbols-outlined text-2xl">translate</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Skill Swap</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full size-10 bg-primary/20 hover:bg-primary/40 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-200">notifications</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center border-2 border-primary/50" data-alt="User profile picture of a smiling person" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCO0LSL7mCdigUIUlSnIkzyTOLxxauBZem1BmzMdfI9bIFAiLb4O7cgjX9trHM-E7sCq2aieX2bqa5UbyoPKqiRiw4cK7WY9D1jh_GEUxI56OUTpwt0u0s4iKCvlrVxaqKc10mgMtEIFT5KtIXnVdPMaBFkdOmT67axgurn72Vc3janldZyyOBxZkiSpVY_nnlkm1TWrVLqL1tjmCKLSotJOCj3m8c_fVxjxhQ_N_YYcejI4jdZw37K-H8ftsLB3S_AHMLO38Rp_fI')">
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-6xl mx-auto w-full px-6 py-12 md:py-20">
+<!-- Hero Title -->
+<div class="text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">What languages do you want to master?</h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl mx-auto">
+                    Select the languages you're interested in learning or practicing. We'll match you with experts around the world.
+                </p>
+</div>
+<!-- Language Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+<!-- Spanish (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Thematic image of Madrid architecture for Spanish language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCF2JxhcCnA-TCFIlExoR0gDCnRG63Uhgt2Glg1eN0yyzEpD8687KjyVfV_Fu4nLVEqcFhv3dWnzWgxj-SKa9gHSRlL3vW-S7kyRBDdtF7XJKQ4XbL4Gtg0Z4PbXSeiDZeNAMEvBuKdEMg6_gLjl2mvOWiz6lTbLxUM_9Tg-bBqM0hzXY4eRis857H_pM2b1XC2u2oyIUBzPtnmA6Yu9enwTMj3YURL9dP3_guNZZpEjG_QXMsdtL0IRfooaRy81y0yFQTE2FJ3d0s')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">Spanish</p>
+<p class="text-white/70 text-sm">Tap to select</p>
+</div>
+</div>
+<!-- French (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Eiffel Tower and Paris cityscape for French language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKbDaRStvfQC8uZbppkqP9odQHVNuhKZ_vY_EQV_yCSXVKkruVEva7AGwVb8JTGDsEe0kGLhzaZ8s0loJ1fTYezZh8Doq_Yiu8-wdb_yqIM67BU274eTizTACXVNv12rJRDfPBlDEixyfpDdlzKBEa7tiTunDUpkpTAE3s41n2zFUf_FHituj1Ycf-TmUT1FL1Uftl1RuBDSJgpXj9SNvD4eooz4AriWRhHm3Nni6sYfrBmXBd9CVfCykuAmIgmukyzLdaK8b1mGE')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">French</p>
+<p class="text-white/70 text-sm">Tap to select</p>
+</div>
+</div>
+<!-- Japanese (Selected) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-md ring-4 ring-indigo-500/50 border-2 border-indigo-500">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Mount Fuji and cherry blossoms for Japanese language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(79, 70, 229, 0.6) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoRN7FbXOMOU7BYMswE_0OBjeTPKy3RCN8x5GY19gA910Vz5C5T499ZfFR4HikMTkvt74qHIV1NPJ5xSYASps2sqPxWupO6nAC6YDzp8JHI7oWmzKt6X_4mLo7JnFc2LBgikBawlmdGmwzMTaDzT_vH8lLeDcJu7kfjIdqqjllzf6vC4_N5kMmur-yxmi-tniIG8NczEKU6z_wJx0u_P3XyCi0blQGAtEJYQADOnm2E-Uns2iK6kC3IE73KJFBviBjpKhVxZmWnak')"></div>
+<div class="absolute top-4 right-4 z-10 size-8 bg-indigo-500 rounded-full flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">Japanese</p>
+<p class="text-white text-sm font-medium">Selected</p>
+</div>
+</div>
+<!-- Conversational English (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Golden Gate Bridge and San Francisco for English language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjBB3SzzYrHswgvf99LQIMOXRLMuTRX71cNaO5oKE_IC7_E8IJdhC-kjKNFBepPbR1lWo_GXSL8kjPnArhIzmEOyGC_8ND3VOyyef3Jz6b8SukFjsPjgOE7ccxco-cGUBqpfpHGecxtdyZ5VuKkyaS0LYPk4hvCct9CgOi71r0S_xB6s94Ft3JN6ib5XduV84OrsQYSQ736A2_OoQTRqc2p_4c7mKzJg3wxCnr9whvLVTGA25AokY_qa1L6_5IFVy4YL0QmgUjfg8')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">English</p>
+<p class="text-white/70 text-sm">Conversational</p>
+</div>
+</div>
+<!-- Business Mandarin (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Shanghai skyline at night for Mandarin language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDT3-53Gxq5J8_9vfkXVwjhmWswa6RmKOwg_D9vcrLXinbn2txeX1gQBE2Ouq-0qxCYm5ubLrwk0at6feHljirs9XoZx4xPjNwynYmvK41i-7hh42xDzCs1Ulzv22gcsNxh0UvZpQr1PVFKTnAwLxZG76kqg2IEMotdzYhnoD-Amstl2tdk6u7Um5pAaPkIk-lTCHGuJp9S2KTYZ_WjtlvsGyBKkhohlhB2OMzl82M9PDYLo-58uMJcIWdWZNX37byEvmIH4FGJSs')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">Mandarin</p>
+<p class="text-white/70 text-sm">Business focus</p>
+</div>
+</div>
+<!-- Sign Language (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Hands communicating for Sign Language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCypSrVg4v0gNN9-OUYd5raFYE91QYcvMGSsPxV-SaEmzJN4gz_DZJjniz9VR9dFjlZhyWh9OEWvaFut5NjNo0UW5q9DOP-YYo6rFiUhmNtR2A6_yBOLeK99F6XRDjKzM4lH5aHyFPNL5FqbwvziZTG9UJulkSa8OkWUZFLbaDJWacuvc2W5nPW3wU_45a7DyN5abeBKU80bXmdrnZT9uZtwRs-lNRBQ8TfypJuYn4H5TBFc9HhN12ixNY9uhEXY58-Vc79G2uTTok')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">Sign Language</p>
+<p class="text-white/70 text-sm">Visual learning</p>
+</div>
+</div>
+<!-- Arabic (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern Dubai architecture for Arabic language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAo1KVCNdzN00GS-Ob2R9V0QJ-cdJ3hVrfCzX0EChIhKC4qmSj0mxFmzyWC0WA66XI-593zw1pHoIUCQ5q060o6Opwc_wKWdyTWXnsMeWNGNC0WNBrtZAQb00ekCznThOfRozkeDvmEejf4dNS6rtKv58HUNOV-_YsLgrCp5bYOI8Jh62TgYpbZ6wMYw6ce7OIdlEBCQhmE6w364Uqm7emLliPFe3LAJqfguivQJoh0wf6Z4uiTvuxO6LnGanqJbm2LCy8rT55Xx4w')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">Arabic</p>
+<p class="text-white/70 text-sm">Classical &amp; Dialects</p>
+</div>
+</div>
+<!-- German (Default) -->
+<div class="group relative cursor-pointer overflow-hidden rounded-xl aspect-[4/5] bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border-2 border-transparent">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Berlin Cathedral for German language" style="background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWSFLMrqmErr98g_UY6U5Hc_HhGiWEtTjgSIAv_37g_4qUvP8BzJVp-6FfJkGQwpsQtGqASJKy-ZT3V_FRs94i7x1_8ZPaUQfV9d77kPPj5pvtUFPxI_MEeS2EfZhqjITgPJePPP7BvvQX3uyEEF7fW2G6RnyYiAbYDM8hE3KfZPoy2Fk4I9gs7fUy5K3QvASQSgUX1bzpnq1qgbWeRBfUGeJ26WpV7eSo1uPPIKOzxdl_cI0kZIJPznx1TfmEglsQrqUHjp7eGb4')"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white text-xl font-bold">German</p>
+<p class="text-white/70 text-sm">Standard Hochdeutsch</p>
+</div>
+</div>
+</div>
+<!-- Footer CTA -->
+<div class="flex flex-col items-center gap-6 mt-8">
+<button class="w-full max-w-md bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 group">
+<span>Continue</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<button class="text-slate-500 hover:text-indigo-600 font-semibold transition-colors flex items-center gap-1 underline underline-offset-4">
+                    Skip for now
+                </button>
+</div>
+</main>
+<!-- Progress Indicator -->
+<div class="fixed bottom-0 left-0 w-full h-2 bg-primary/20">
+<div class="bg-indigo-500 h-full w-2/3 transition-all duration-500"></div>
+</div>
+</div>
+</body></html>

@@ -1,3 +1,183 @@
-<title>Language Skills</title>
-<h1>Language Skills</h1>
-<h2>Top Language Mentors</h2>
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillSwap - Select Interests</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e5e5fa",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121220",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .interest-card:hover {
+            transform: translateY(-2px);
+            transition: all 0.2s ease-in-out;
+        }
+        .interest-card.active {
+            border-color: #9d9de0;
+            background-color: #e5e5fa;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between border-b border-primary/20 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-4 md:px-20 lg:px-40 sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary text-slate-900">
+<span class="material-symbols-outlined text-2xl">swap_calls</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">SkillSwap</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-2">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Onboarding</span>
+<div class="h-1 w-24 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+</div>
+<div class="size-10 rounded-full border-2 border-primary bg-cover bg-center" data-alt="User profile placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgBFLurHmT_0HWaAqq3BX4xerA_AKzkVGvKSPXi9JbuxjbxN4ZmejuUG8BQ_ZqKg-hHx9XZ_nXNbwMsmtdi_r4iKWT5uL0-1VK4eFvI1MP5s3CjSgLDzk8j2vfU-5kWCjVyDzyBNUG8YOqo5V4lV0Eu_9b8_6OJSxd1TSpAekIrDXBfrl5YvD6yZ7ftjbWzjt8ZsTEKcd990gATzySC5MS4PrP0QoQbjBaGQISddYm_aE0MsZIEgtzpuFu-WlKqP-qyK9FYWkYeeA")'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-6 md:px-20 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Progress Label -->
+<div class="mb-6">
+<div class="flex items-center gap-2 text-primary font-semibold text-sm">
+<span class="material-symbols-outlined text-sm">account_circle</span>
+<span>Step 1 of 3: Setting up your profile</span>
+</div>
+</div>
+<!-- Hero Title -->
+<div class="mb-10 text-center md:text-left">
+<h1 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight tracking-tight mb-4">
+                        What design skills do you <br class="hidden md:block"/> want to learn?
+                    </h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                        Select your interests to get personalized skill swap matches. We'll find people who want to learn what you know and can teach you what you don't.
+                    </p>
+</div>
+<!-- Grid Selection -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+<!-- UI/UX Design -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">dashboard_customize</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">UI/UX Design</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+</div>
+</div>
+<!-- Graphic Design -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">palette</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Graphic Design</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+</div>
+</div>
+<!-- Motion Graphics -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">movie</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Motion Graphics</p>
+</div>
+<!-- Illustration -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">draw</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Illustration</p>
+</div>
+<!-- Branding -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200 active bg-primary/20 border-primary/50">
+<div class="size-12 rounded-lg bg-primary flex items-center justify-center text-slate-900">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Branding</p>
+<div class="absolute top-3 right-3 opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-slate-900 text-xl">check_circle</span>
+</div>
+</div>
+<!-- Product Design -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">inventory_2</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Product Design</p>
+</div>
+<!-- Web Design -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">language</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">Web Design</p>
+</div>
+<!-- 3D Modeling -->
+<div class="interest-card group relative flex flex-col gap-4 p-5 rounded-xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer hover:border-primary transition-all duration-200">
+<div class="size-12 rounded-lg bg-primary/30 dark:bg-primary/10 flex items-center justify-center text-slate-900 dark:text-primary group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">view_in_ar</span>
+</div>
+<p class="font-bold text-slate-900 dark:text-white">3D Modeling</p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-col items-center gap-6 mt-auto pb-10">
+<button class="w-full max-w-[480px] h-14 bg-primary hover:bg-primary/80 text-slate-900 font-bold text-lg rounded-xl shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2">
+<span>Continue</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<a class="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white font-medium transition-colors" href="#">
+                        Skip for now
+                    </a>
+</div>
+<!-- Info Card -->
+<div class="mt-8 p-6 rounded-xl bg-primary/10 border border-primary/20 flex gap-4 items-start">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined">info</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white">Why pick interests?</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Selecting at least 3 topics helps our algorithm find the perfect swap partners for your journey. You can change these anytime in your settings.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto px-6 py-8 border-t border-slate-200 dark:border-slate-800 flex justify-center text-slate-500 text-sm">
+<p>© 2024 SkillSwap. Design with love.</p>
+</footer>
+</div>
+</div>
+</body></html>
